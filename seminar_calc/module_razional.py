@@ -23,5 +23,13 @@ def razi_sub():
 def razi_dif():
     return x / y
 
-
+def do_it(char):
+    if char == '+':
+        return x + y
+    elif char == '-':
+        return x - y
+    elif char == '*':
+        return x * y
+    elif char == '/':
+        return x / y
 

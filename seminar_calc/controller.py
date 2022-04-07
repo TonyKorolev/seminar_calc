@@ -6,5 +6,5 @@ def button_click():
     math_char = view.get_math_char()
     value_b = view.get_value()
     model.init(value_a, value_b)
-    result = model.razi_mult()
+    result = model.do_it(math_char)
     view.view_data(result)

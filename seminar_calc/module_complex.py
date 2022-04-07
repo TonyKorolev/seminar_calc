@@ -22,4 +22,3 @@ def comp_sub():
 
 def comp_dif():
     return complex(x) / complex(y)
-

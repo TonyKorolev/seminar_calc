@@ -1,4 +1,5 @@
 # Модуль математических операций с рациональными числами.
+import math
 
 x = 0
 y = 0
@@ -25,11 +26,11 @@ def razi_dif():
 
 def do_it(char):
     if char == '+':
-        return x + y
+        return round(x + y, 3)
     elif char == '-':
-        return x - y
+        return round(x - y, 3)
     elif char == '*':
-        return x * y
+        return round(x * y, 3)
     elif char == '/':
-        return x / y
+        return round(x / y, 3)
 

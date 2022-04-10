@@ -1,7 +1,4 @@
-
 from datetime import datetime as dt
-
-
 
 def html_logger(*args):
     time = dt.now().strftime('%H:%M:%S')
@@ -11,6 +8,6 @@ def html_logger(*args):
         if i == len(args) - 2: data += '='
     
     
-    with open('seminar_calc\log.html', 'a') as file:
+    with open('seminar_calc//log.html', 'a') as file:
         file.write(f'Time: {time} Calc_action: {str(data)}\n')
 

@@ -1,7 +1,4 @@
-
 import datetime as dt
-
-
 
 def html_logger(*args):
     time_stamp = dt.datetime.now()
@@ -11,6 +8,6 @@ def html_logger(*args):
         if i == len(args) - 2: data += '='
     
     
-    with open('seminar_calc\log.html', 'a') as file:
+    with open('log.html', 'a') as file:
         file.write(f'Time: {time_stamp} Calc_action: {str(data)}\n')
 

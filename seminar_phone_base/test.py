@@ -1,6 +1,6 @@
-import data_receiver
+import ui_test as ui
 import logger
 
 
-print(data_receiver.get_user_info(10))
-logger.log_csv(data_receiver.get_user_info(10))
+entry_user = ui.get_user_info()
+logger.log_xml(entry_user)

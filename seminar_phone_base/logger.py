@@ -1,7 +1,7 @@
 # Модуль логирования данных
 
 import json
-from platform import java_ver
+import xml
 
 
 def log_json(data):

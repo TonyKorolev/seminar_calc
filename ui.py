@@ -14,7 +14,8 @@ def get_what_do_it():
                     + "4 - Удалить контакт\n"
                     + "5 - Выйти из справочника\n"
                     + "Введите номер: "))
-        
+        if number == 5:
+            break
     return number
 
 def get_name():

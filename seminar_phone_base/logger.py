@@ -1,11 +1,21 @@
 # Модуль логирования данных
 
-def log_xml(data):
-    with open('seminar_phone_base\\log.xml', 'a') as file:
+import json
+from platform import java_ver
+
+
+def log_json(data):
+    with open('seminar_phone_base\\log.json', 'a') as file:
         res = str(data)
         file.write(f'{res}\n')
 
-
-    
+def log_xml(data):
+    res  = ""
+    for i in data:
+        res += f'{i}\n'
+    with open('seminar_phone_base\\log.xml', 'a') as file:
+        #res = str(data)
+        file.write(f'{res}\n')
+   
 
 
